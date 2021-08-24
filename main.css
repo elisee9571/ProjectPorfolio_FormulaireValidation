@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* 
+    border: none;
+    outline: none; */
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #131313;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 400px;
+    max-width: 100%;
+}
+
+.header {
+    background: #f7f7f7;
+    border-bottom: 1px solid #f0f0f0;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    padding: 30px 40px;
+}
+
+.form-control {
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.form-control label {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.form-control input {
+    border: 2px solid #f0f0f0;
+    border-radius: 5px;
+    display: block;
+    font-size: 14px;
+    padding: 10px;
+    width: 100%;
+}
+
+.form-control.success input {
+    border-color: #2ecc71;
+}
+
+.form-control.error input {
+    border-color: crimson;
+}
+
+.form-control .username-icon,
+.form-control .email-icon,
+.form-control .password2-icon {
+    visibility: hidden;
+}
+
+.form-control.success .feather-check-circle {
+    visibility: visible;
+    color: #2ecc71;
+}
+
+.form-control.success .feather-alert-triangle {
+    display: none;
+}
+
+.form-control.error .feather-alert-triangle {
+    visibility: visible;
+    color: crimson;
+}
+
+.form-control .username-icon,
+.form-control .email-icon,
+.form-control .password-icon,
+.form-control .password2-icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 20px;
+    right: 10px;
+    transition: all 0.2s;
+}
+
+.form-control .password-icon .feather-eye-off {
+    display: none;
+}
+
+.form-control .password-icon:hover {
+    cursor: pointer;
+    color: #555;
+}
+
+.form-control small {
+    visibility: hidden;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.form-control.error small {
+    visibility: visible;
+    color: crimson;
+}
+
+.form button {
+    background: crimson;
+    border: 2px solid crimson;
+    color: #fff;
+    border-radius: 5px;
+    display: block;
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    cursor: pointer;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire validation</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>Inscription</h2>
+        </div>
+        <form class="form" id="form">
+            <div class="form-control">
+                <label>Utilisateur</label>
+                <input type="text" placeholder="Nom Prénom" id="username">
+                <div class="username-icon">
+                    <i data-feather="check-circle"></i>
+                    <i data-feather="alert-triangle"></i>
+                </div>
+                <small>Error message</small>
+
+            </div>
+
+            <div class="form-control">
+                <label>Email</label>
+                <input type="email" placeholder="email@gmail.com" id="email">
+                <div class="email-icon">
+                    <i data-feather="check-circle"></i>
+                    <i data-feather="alert-triangle"></i>
+                </div>
+                <small>Error message</small>
+
+            </div>
+
+            <div class="form-control ">
+                <label>Mot de passe</label>
+                <input type="password" placeholder="Mot de passe" id="password">
+                <div class="password-icon">
+                    <i data-feather="eye"></i>
+                    <i data-feather="eye-off"></i>
+                </div>
+                <small>Error message</small>
+
+            </div>
+
+            <div class="form-control ">
+                <label>Mot de passe validation</label>
+                <input type="password" placeholder="Mot de passe validation" id="password2">
+                <div class="password2-icon">
+                    <i data-feather="check-circle"></i>
+                    <i data-feather="alert-triangle"></i>
+                </div>
+                <small>Error message</small>
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+        feather.replace();
+    </script>
+    <script src="main.js"></script>
+
+</body>
+
+</html>
